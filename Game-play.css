@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: Montserrat;
+}
+body {
+	background: #9013fe;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+.container {
+	background: white;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	width: 700px;
+	padding: 50px;
+	align-self: center;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+}
+.col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container > .row {
+	width: 100%;
+	justify-content: space-evenly;
+}
+.profile-icon {
+    border-radius: 50%;
+    border: 2px solid bisque;
+}
+.name {
+	margin: 20px 0;
+	font-size: x-large;
+	font-weight: bold;
+}
+.score {
+	margin: -80px 0 0;
+	font-size: xx-large;
+}
+.score > span {
+	margin: 0 5px;
+}
+.round-runs {
+	font-size: xx-large;
+	width: 200px;
+	justify-content: space-evenly;
+}
+
+#strike-button {
+	border: none;
+	border-radius: 25px;
+	background: linear-gradient(135deg, #c02425, #f0cb35);
+	font-size: large;
+	width: 300px;
+	color: white;
+	padding: 10px;
+	margin-top: 50px;
+	margin-bottom: -50px;
+	outline: none;
+}
+#btn1 {
+	border: none;
+	border-radius: 25px;
+	background: linear-gradient(135deg, #c02425, #f0cb35);
+	/* font-size: large; */
+	/* width: 300px; */
+	color: white;
+	padding: 10px;
+	margin-top: 50px;
+	margin-bottom: -50px;
+	outline: none;
+}
+}
+#strike-button:hover {
+	box-shadow: 0 0 10px 0 black;
+}
+
+#result {
+	margin-top: 50px;
+	background: linear-gradient(90deg, #f79d00, #64f38c);
+	background-clip: text;
+	text-transform: uppercase;
+	font-size: xx-large;
+	font-weight: bold;
+	color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.prog{
+	width : 25px;
+	height : 25px;
+	border: 1px solid #000;
+	display: inline-block;
+	border-radius: 50%;
+ }

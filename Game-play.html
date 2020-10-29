@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-Play</title>
+    <link rel="stylesheet" href="./Game-play.css">
+    <script src="./Game-play.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img
+                    src="./assets/Real_Madrid.jpg"
+                    alt=""
+                    class="profile-icon"
+                    height="150px"
+                    width="150px"
+                />
+                <span class="name" id="team-1-name"></span>
+                <div class="row round-runs" id="team-1-round-runs">
+                    <div class='prog' id="qIndex"></div>
+                    <div class='prog' id="qIndex"></div>
+                    <div class='prog' id="qIndex"></div>
+                    <div class='prog' id="qIndex"></div>
+                    <div class='prog' id="qIndex"></div>
+                    <div class='prog' id="qIndex"></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row score">
+                    <span id="team-1-score"></span>
+                    <span>-</span>
+                    <span id="team-2-score"></span>
+                </div>
+            </div>
+            <div class="col">
+                <img
+                    src="./assets/Huesca.png"
+                    alt=""
+                    class="profile-icon"
+                    height="150px"
+                    width="150px"
+                />
+                <span class="name" id="team-2-name"></span>
+                <div class="row round-runs" id="team-2-round-runs">
+                    <div class='prog' id="qIndex"></div>
+                    <div class='prog' id="qIndex"></div>
+                    <div class='prog' id="qIndex"></div>
+                    <div class='prog' id="qIndex"></div>
+                    <div class='prog' id="qIndex"></div>
+                    <div class='prog' id="qIndex"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <button type="button" id="btn1" onclick="history.go(0)">Try Again</button>
+            <button
+                id="strike-button"
+                onclick="handleStrikeButtonClick()"
+            ></button>
+        </div>
+        <div class="row" id="result" hidden></div>
+    </div>
+</body>
+</html>
